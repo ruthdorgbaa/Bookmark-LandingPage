@@ -42,7 +42,6 @@ li button{
     display: flex;
     justify-content: space-between;
     position: relative;
-    
 }
 
 .content{
@@ -82,7 +81,7 @@ p{
     color: white; 
   }
 .container::before{
-content: '';
+    content: '';
     position: absolute; 
     height: 350px;
     width: 570px;
@@ -348,6 +347,9 @@ footer{
     gap: 40px;
 }
 @media screen and (max-width: 375px) {
+    nav, main{
+        width: 100%;
+    }
     nav{
         margin: 0;
         padding: 0;
@@ -361,11 +363,22 @@ footer{
     .container{
         flex-direction: column;
     }
+    .container::before{
+        right: 0;
+        width: 267px;
+        height: 186px;
+        border-bottom-left-radius: 40%;
+        top: 96px;
+    }
     .content{
         width: fit-content;
         margin: auto;
         order: 2;
         
+    }
+    .image img{
+        height: 204px;
+        width: 307px;
     }
     .image{
         margin: auto;
