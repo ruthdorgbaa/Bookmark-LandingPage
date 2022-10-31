@@ -151,7 +151,7 @@ nav img{
     line-height: 25px;
     color: hsl(229, 8%, 60%);
 }
-.click button{
+.click button,.btn button{
     margin-top: 35px;
     width: 110px;
     height: 50px;
@@ -183,6 +183,7 @@ nav img{
     width: 270px;
     height: 355px;
     padding: 33px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .shape h3 {
     margin-top: 33px;
@@ -200,4 +201,101 @@ nav img{
     color: white;
     border-radius: 5px;
     border: none;
+}
+
+.questions{
+    margin-top: 60px;
+    text-align: center;
+}
+.firefox{
+    margin-top: 35px;
+}
+.opera{
+    margin-top: 70px;
+
+}
+.questions details{
+    margin: 0 auto;
+    width: 545px;
+    border-bottom: 1px solid hsla(229, 8%, 60%, 0.314);
+}
+.questions details:first-child{
+    border-top: 1px solid hsla(229, 8%, 60%, 0.314);
+
+}
+.questions .p, .questions p{
+    color: hsl(229, 8%, 60%);
+    width: 495px;
+    margin: 30px auto;
+}
+.questions p{
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+}
+
+.questions summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+summary img {
+    width: 18px;
+    height: 12px;
+}
+section{
+    text-align: center;
+    color: white;
+    background: hsl(231, 69%, 60%);
+    margin-top: 40px;
+}
+.section p{
+    padding: 67px 0 42px 0;
+    letter-spacing: 5px;
+}
+
+.section h1 {
+    margin-bottom: 32px;
+}
+
+.input{
+    padding-bottom: 72px;
+}
+.input input, .input button{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+
+}
+.input input{
+    width: 290px;
+}
+.input button{
+    width: 112px;
+    background: hsl(0, 94%, 66%);
+    color: white;  
+}
+footer, .footer, .footer ul, .footer-container{
+    display: flex;
+    align-items: center;
+
+}
+footer{
+    background-color: hsl(229, 31%, 21%);
+    color: white;
+    justify-content: space-between;
+    padding: 30px 160px;
+}
+.footer{
+    align-items: center;
+    gap: 60px;
+}
+li {
+    list-style: none;
+}
+.footer ul{
+    gap: 50px;
+}
+.footer-container{
+    gap: 50px;
 }
