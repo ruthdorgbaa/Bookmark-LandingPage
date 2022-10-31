@@ -1,19 +1,31 @@
-// const menu = document.querySelector(".menu");
-// const menuItem = document.querySelectorAll(".items");
-// const hamburger = document.querySelector(".hamburger");
-// const closeIcon = document.querySelector(".closeIcon");
-// const menuIcon = document.querySelector(".menuIcon");
+const menu = document.querySelector(".hamburger");
+const menuIcon = document.querySelector(".mobile-nav");
+const closeIcon = document.querySelector(".closeIcon");
 
-// function toggleMenu() {
-//     if (menu.classList.contains("showMenu")) {
-//         menu.classList.remove("showMenu");
-//         closeIcon.getElementsByClassName.display = "none";
-//         menuIcon.getElementsByClassName.display = "block";
-//         console.log("here")
-//     } else {
-//         menu.classList.add("showMenu");
-//         closeIcon.style.display = "block";
-//         menuIcon.style.display = "none";
-//     }
-// }
-// hamburger.addEventListener("click", toggleMenu);
+let isVisible = false
+
+function toggleMenu() {
+    if (!isVisible) {
+        menuIcon.style.cssText = "visibility: visible !important;";
+        isVisible = true;
+    }else{
+        menuIcon.style.cssText = "visibility: hidden !important;";
+        isVisible = false
+    }
+    
+    console.log("here")
+}
+menu.addEventListener("click", toggleMenu);
+closeIcon.addEventListener("click", toggleMenu);
+
+
+
+
+
+
+
+
+
+
+
+
