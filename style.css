@@ -516,13 +516,25 @@ footer {
         width: fit-content;
         height: 260px;
     }
+    .features p{
+        margin: auto;
+        padding: 8px;
+    }
 
     .features li {
         margin: auto;
+        padding: 10px;
+        border-top: 1px solid #9e9e9e;
+        
+    }
+    .features li:hover{
+        text-decoration: underline;
+        color: hsl(0, 94%, 66%);
     }
 
     .features ul {
         flex-direction: column;
+        
     }
 
     .content2::before {
@@ -537,6 +549,7 @@ footer {
     .content2 p {
         text-align: center;
         margin-right: 70px;
+        padding: 20px 20px 0 20px;
     }
 
     .btn1 button {
@@ -561,21 +574,27 @@ footer {
 
     .download {
         margin: 0%;
-        padding-top: 160px;
-
+        padding: 160px 20px 0 20px;
     }
 
     .download p {
         margin: 0%;
+        padding-top: 15px;
     }
 
     .browser {
         flex-direction: column;
     }
+    .questions{
+        padding: 20px ;
+    }
+
 
     .questions p {
         margin: 0%;
+        padding-top: 30px;
         padding-bottom: 80px;
+        text-align: center;
     }
 
     details summary {
